@@ -19,6 +19,7 @@
 # print(Bob.split(minyons_1))
 # print(Bob.fullmatch())
 
+
 import tkinter as tk
 import re
 
@@ -37,7 +38,7 @@ def logining():
             login_entry.config(bg="green")
             password_entry.config(bg="green")
         else:
-            login_entry.config(bg="red")
+            login_entry.config(bg="green")
             password_entry.config(bg="red")
     else:
         login_entry.config(bg="red")
@@ -48,7 +49,9 @@ login_label = tk.Label(root, text="Login", font=("Arial", 14), padx=50)
 password_label = tk.Label(root, text="Password", font=("Arial", 14), padx=50)
 login_entry = tk.Entry(root, font=("Arial", 12), width=20)
 password_entry = tk.Entry(root, font=("Arial", 12), width=20, show="*")
+
 login_button = tk.Button(root, text="LOGIN", font=("Arial", 16), width=12, command=logining)
+
 root.grid_columnconfigure(0, minsize=150)
 root.grid_columnconfigure(1, minsize=250)
 root.grid_rowconfigure(0, minsize=90)
